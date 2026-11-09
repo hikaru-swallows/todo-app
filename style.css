@@ -1,0 +1,268 @@
+/* 全体設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #edf6ee;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* メインエリア */
+.container {
+    width: 90%;
+    max-width: 650px;
+
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 件数表示 */
+#task-count {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* 入力エリア */
+.input-area {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* タスク入力 */
+#todo-input {
+    flex: 3;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+/* 日時入力 */
+#todo-date {
+    flex: 2;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+/* フォーカス */
+#todo-input:focus,
+#todo-date:focus {
+    outline: none;
+
+    border-color: #4a90e2;
+
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* 追加ボタン */
+#add-btn {
+    flex: 0 0 90px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #357abd;
+}
+
+/* フィルター */
+.filter-area {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* フィルターボタン */
+.filter-btn {
+    flex: 1;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #ddd;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* リスト */
+#todo-list {
+    list-style: none;
+
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+/* タスク */
+#todo-list li {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 15px;
+
+    margin-bottom: 10px;
+
+    background-color: #f8f9fa;
+
+    border-radius: 8px;
+}
+
+/* チェックアイコン */
+.todo-icon {
+    width: 24px;
+    flex: 0 0 24px;
+
+    margin-right: 10px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    color: #4a90e2;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    user-select: none;
+}
+
+/* タスク名 */
+#todo-list li span:not(.todo-icon) {
+    flex: 1;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+/* 日時表示 */
+small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+/* 完了 */
+.completed {
+    color: #999;
+
+    text-decoration: line-through;
+}
+
+/* 削除ボタン */
+.delete-btn {
+    background-color: #ff5c5c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 6px 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #e04848;
+}
+
+.edit-btn {
+    background-color: #ffb74d;
+
+    color: white;
+
+    border: none;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-right: 6px;
+
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #f39c12;
+}
+
+#add-btn,
+.filter-btn.active {
+    background-color: #6b9f71;
+}
+
+#add-btn:hover,
+.filter-btn.active:hover {
+    background-color: #5a8a60;
+}
