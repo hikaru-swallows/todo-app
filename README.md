@@ -34,3 +34,6 @@ HTML・CSS・JavaScriptで作成したToDoアプリです。
 
 ## 制作目的
 - JavaScriptのDOM操作・イベント処理・LocalStorageの学習を目的として制作しました。
+
+## 公開URL
+- https://hikaru-swallows.github.io/todo-app/
