@@ -288,6 +288,7 @@ small {
   #add-btn {
     width: 100%;
     min-width: 0;
+    max-width: 100%;
     flex: auto;
   }
 
